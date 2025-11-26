@@ -21,6 +21,6 @@ Juego de Tetris clásico con sistema de usuarios y puntuaciones.
 - CSS3
 - localStorage
 
-##Autores
+## Autores
 -jhampo
 -Link video: https://www.youtube.com/watch?v=Kxm6yC0JHLw
