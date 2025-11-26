@@ -22,5 +22,5 @@ Juego de Tetris clásico con sistema de usuarios y puntuaciones.
 - localStorage
 
 ## Autores
--jhampo
--Link video: https://www.youtube.com/watch?v=Kxm6yC0JHLw
+- jhampo
+- Link video: https://www.youtube.com/watch?v=Kxm6yC0JHLw
