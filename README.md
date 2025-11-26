@@ -1,6 +1,6 @@
 # Proyecto_FInal_ID
 
-# Tetris Game
+## Tetris Game
 
 ## Descripción
 Juego de Tetris clásico con sistema de usuarios y puntuaciones.
@@ -17,6 +17,10 @@ Juego de Tetris clásico con sistema de usuarios y puntuaciones.
 
 ## Tecnologías
 - HTML5 Canvas
-- JavaScript ES6
+- JavaScript
 - CSS3
 - localStorage
+
+##Autores
+-jhampo
+-Link video: https://www.youtube.com/watch?v=Kxm6yC0JHLw
