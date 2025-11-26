@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="login-screen" id="login-screen">
+        <div class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-email">Correo electrónico:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
+            </form>
+            <p class="register-link">¿No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <div class="login-screen" id="register-screen" style="display: none;">
+        <div class="login-form">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="register-username">Nombre de usuario:</label>
+                    <input type="text" id="register-username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Correo electrónico:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Contraseña:</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-age">Edad:</label>
+                    <input type="number" id="register-age" min="1" max="100" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-color">Color favorito:</label>
+                    <input type="color" id="register-color" value="#ff0000">
+                </div>
+                <button type="submit" class="btn-login">Registrarse</button>
+            </form>
+            <p class="register-link">¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+
+    <div class="game" id="game-container" style="display: none;">
+        <div class="canvas-container">
+            <span>Reservar</span>
+            <div class="canvas">
+                <canvas id="canvas-hold"></canvas>
+            </div>
+            <div class="user-panel">
+                <div class="user-info">
+                    <span id="user-welcome">Bienvenido, </span>
+                    <button id="logout-btn">Cerrar Sesión</button>
+                    <button id="profile-btn">Ver Perfil</button>
+                </div>
+                <div class="user-stats">
+                    <div>Mejor Puntaje: <span id="best-score">0</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <span class="score-container">PUNTAJE: <span id="score">0</span></span>
+            <div class="canvas">
+                <canvas id="canvas-tetris"></canvas>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <span>Siguiente</span>
+            <div class="canvas">
+                <canvas id="canvas-next"></canvas>
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+            <span>TETRIS</span>
+            <button id="btn-start">INICIO</button>
+        </div>
+    </div>
+
+    <!-- Perfil de Usuario -->
+    <div class="profile-screen" id="profile-screen" style="display: none;">
+        <div class="profile-form">
+            <h2>Perfil de Usuario</h2>
+            <div class="profile-info">
+                <p><strong>Nombre:</strong> <span id="profile-username"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>Edad:</strong> <span id="profile-age"></span></p>
+                <p><strong>Color favorito:</strong> <span id="profile-color"></span></p>
+                <p><strong>Mejor puntaje:</strong> <span id="profile-best"></span></p>
+            </div>
+            <button id="back-to-game">Volver al Juego</button>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/userManager.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
